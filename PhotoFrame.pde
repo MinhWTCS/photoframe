@@ -13,7 +13,7 @@ void setup(){
     for(int i=0;i<3;i++){
         fireworks[i]=new FireWorks();
     }
-    for(int i=0;i<20;i++){
+    for(int i=0;i<6;i++){
         dots[i]=new PolkaDot(random(0,width),random(0,height));
         tri[i]=new Tri(random(0,width),random(0,height));
     }
@@ -25,7 +25,7 @@ void setup(){
 }
 void draw(){
     background(255,255,255);
-    for(int i=0;i<20;i++){
+    for(int i=0;i<6;i++){
         dots[i].draw();
         tri[i].draw();
     }
